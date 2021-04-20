@@ -16,3 +16,15 @@ console.log(normalPerson);
 normalPerson.chargeBill(150);
 normalPerson.chargeBill(3400);
 console.log(normalPerson.salary);
+
+const tanaPerson = {
+    firstName :'Tana',
+    lastName: 'Tupu',
+    salary: 150000
+}
+
+
+  const tanaChargeBill = normalPerson.chargeBill.bind(tanaPerson);
+  tanaChargeBill (1000);
+  tanaChargeBill(3000);
+  console.log(tanaPerson.salary);
